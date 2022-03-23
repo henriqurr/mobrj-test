@@ -1,0 +1,215 @@
+$gradient-main: linear-gradient(274.13deg, #197acf 0.89%, #1a8de9 98.03%);
+$gradient-dark: linear-gradient(178.65deg, #032a5e 0%, #003781 100%);
+$gradient-box: linear-gradient(130.05deg, #fafeff -0.02%, #effcff 99.98%);
+$gradient-popup: linear-gradient(130.05deg, #ffffff -0.02%, #f8fdff 99.98%);
+$gradient-menu: linear-gradient(130.05deg, #ffffff -0.02%, #f8fdff 99.98%);
+$gradient-special-blue: linear-gradient(
+  274.13deg,
+  #006192 0.89%,
+  #007ab3 98.03%
+);
+$gradient-special-orange: linear-gradient(
+  251.26deg,
+  #f86200 11.72%,
+  #ffba35 75.65%
+);
+
+$primary-50: #c3ddff;
+$primary-100: #a0c8ff;
+$primary-200: #589fff;
+$primary-300: #1176ff;
+$primary-400: #0055c8;
+$primary-500: #003781;
+$primary-600: #002c68;
+$primary-700: #00214e;
+$primary-800: #001635;
+$primary-900: #000c1b;
+
+$action-50: #ebf5fd;
+$action-100: #d4eafb;
+$action-200: #a6d2f6;
+$action-300: #77bbf2;
+$action-400: #49a4ed;
+$action-500: #1a8de9;
+$action-600: #197acf;
+$action-700: #145fa1;
+$action-800: #0e4474;
+$action-900: #092a46;
+
+$gray-50: #fafafa;
+$gray-100: #f5f5f5;
+$gray-200: #ececec;
+$gray-300: #d9d9d9;
+$gray-400: #c2c2c2;
+$gray-500: #999999;
+$gray-600: #767676;
+$gray-700: #5b5b5b;
+$gray-800: #414141;
+$gray-900: #202020;
+
+$secondary-50: #d8f2fd;
+$secondary-100: #d0effd;
+$secondary-200: #c1ebfb;
+$secondary-300: #b3e6fb;
+$secondary-400: #a5e1fb;
+$secondary-500: #96dcfa;
+$secondary-600: #79d2f9;
+$secondary-700: #5cc9f7;
+$secondary-800: #3ebff6;
+$secondary-900: #21b5f4;
+
+$opaque-50: #2dbcff;
+$opaque-100: #06b0ff;
+$opaque-200: #00a4f0;
+$opaque-300: #0096dc;
+$opaque-400: #0088c7;
+$opaque-500: #007ab3;
+$opaque-600: #006192;
+$opaque-700: #00496e;
+$opaque-800: #00324b;
+$opaque-900: #001a27;
+
+$info-50: #ecf0f8;
+$info-100: #dfe5f3;
+$info-200: #b9c7e6;
+$info-300: #94aad8;
+$info-400: #6e8ccb;
+$info-500: #496ebd;
+$info-600: #38589b;
+$info-700: #2b4275;
+$info-800: #1d2d50;
+$info-900: #0f182b;
+
+$success-50: #e1ffe8;
+$success-100: #c5e9cd;
+$success-200: #9fdcae;
+$success-300: #7ace8e;
+$success-400: #55c06f;
+$success-500: #3da556;
+$success-600: #1e8927;
+$success-700: #22782a;
+$success-800: #276937;
+$success-900: #1c4c27;
+
+$warning-50: #fff9ed;
+$warning-100: #fff2d8;
+$warning-200: #ffe4af;
+$warning-300: #ffd687;
+$warning-400: #ffc85e;
+$warning-500: #ffba35;
+$warning-600: #ffac0c;
+$warning-700: #e29500;
+$warning-800: #ba7a00;
+$warning-900: #915f00;
+
+$danger-50: #fdf5f6;
+$danger-100: #fce5eb;
+$danger-200: #f2b4bd;
+$danger-300: #eb8896;
+$danger-400: #e35d70;
+$danger-500: #dc3149;
+$danger-600: #c51322;
+$danger-700: #b0050c;
+$danger-800: #8f1829;
+$danger-900: #63111c;
+
+$orange-50: #ffebdf;
+$orange-100: #ffdcc5;
+$orange-200: #ffbd92;
+$orange-300: #ff9e5f;
+$orange-400: #ff7f2c;
+$orange-500: #f86200;
+$orange-600: #e45a00;
+$orange-700: #e45a00;
+$orange-800: #bb4a00;
+$orange-900: #a64200;
+
+$lemon-50: #f7f9e5;
+$lemon-100: #f2f6d7;
+$lemon-200: #e8f0b9;
+$lemon-300: #dfea9c;
+$lemon-400: #d5e37e;
+$lemon-500: #ccdd61;
+$lemon-600: #c3d744;
+$lemon-700: #b5cb2c;
+$lemon-800: #9bae25;
+$lemon-900: #81901f;
+
+$fluor-50: #eefffe;
+$fluor-100: #e6fffe;
+$fluor-200: #d7fffe;
+$fluor-300: #c8fffd;
+$fluor-400: #b8fffd;
+$fluor-500: #a9fffc;
+$fluor-600: #95fffb;
+$fluor-700: #7bfffa;
+$fluor-800: #4dfef8;
+$fluor-900: #00f9f0;
+
+$purple-50: #f8ebff;
+$purple-100: #e1cfeb;
+$purple-200: #d8bee5;
+$purple-300: #c3a3d3;
+$purple-400: #aa86be;
+$purple-500: #8a679c;
+$purple-600: #745684;
+$purple-700: #5f466b;
+$purple-800: #493653;
+$purple-900: #33263a;
+
+$default: transparent !default;
+$primary: $action-500 !default;
+$secondary: $secondary-500 !default;
+$success: $success-500 !default;
+$warning: $warning-500 !default;
+$danger: $danger-500 !default;
+$white: #ffffff !default;
+$black: #000000 !default;
+$white-50: rgba($white, 0.5) !default;
+
+$theme-colors: (
+  "default": transparent,
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger,
+  "white": $white,
+  "black": $black,
+) !default;
+
+$gradient-colors: (
+  "main": $gradient-main,
+  "dark": $gradient-dark,
+  "box": $gradient-box,
+  "popup": $gradient-popup,
+  "menu": $gradient-menu,
+  "special-blue": $gradient-special-blue,
+  "special-orange": $gradient-special-orange,
+) !default;
+
+$text-colors: (
+  "primary": $primary-500,
+  "secondary": $secondary-500,
+  "success": $success-500,
+  "warning": $warning-500,
+  "danger": $danger-500,
+  "light": $gray-100,
+  "dark": $gray-900,
+  "white": $white,
+  "white-50": $white-50,
+  "black": $black,
+  "gray": $gray-500,
+  "lighter-gray-50": $gray-50,
+  "lighter-gray-100": $gray-100,
+  "lighter-gray": $gray-200,
+  "light-gray": $gray-300,
+  "dark-gray": $gray-700,
+) !default;
+
+$toast-colors: (
+  "danger": $danger-500,
+  "warning": $warning-500,
+  "success": $success-500,
+  "info": $primary-500,
+) !default;

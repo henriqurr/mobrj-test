@@ -1,0 +1,18 @@
+@mixin text-color($color) {
+  color: $color;
+}
+
+@mixin make-font-size($size, $value, $lineheight: null) {
+  .fs-#{$size} {
+    // font-size: math.div($value, 16) + rem;
+    // line-height: math.div($lineheight, 16) + rem;
+    font-size: $value + px;
+    line-height: $lineheight + px;
+  }
+}
+
+@mixin make-font-weight($weight) {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}

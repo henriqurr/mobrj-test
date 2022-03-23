@@ -1,0 +1,24 @@
+$text-size-xs: 10 16;
+$text-size-sm: 12 18;
+$text-size-md: 14 18;
+$text-size-lg: 16 24;
+$text-size-xl: 18 26;
+$text-size-2xl: 20 28;
+$text-size-3xl: 24 32;
+$text-size-4xl: 28 36;
+$text-size-5xl: 32 38;
+
+$map-text-size: (
+  "xs": $text-size-xs,
+  "sm": $text-size-sm,
+  "md": $text-size-md,
+  "lg": $text-size-lg,
+  "xl": $text-size-xl,
+  "2xl": $text-size-2xl,
+  "3xl": $text-size-3xl,
+  "4xl": $text-size-4xl,
+  "5xl": $text-size-5xl,
+) !default;
+
+$font-family: "allianz";
+$font-weight: 100, 300, 600, bold;

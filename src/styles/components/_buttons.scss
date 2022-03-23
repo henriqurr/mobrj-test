@@ -1,0 +1,83 @@
+.button {
+  cursor: pointer;
+  user-select: none;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  transition: $button-transitions;
+  border: none;
+
+  border-width: $button-border-width;
+  border-radius: $button-border-radius;
+
+  text-transform: uppercase;
+
+  svg {
+    transition: $button-transitions;
+  }
+
+  &:disabled {
+    cursor: unset;
+    touch-action: unset;
+    pointer-events: none;
+  }
+
+  &--normal {
+    @extend .button;
+    @include button-size("normal");
+  }
+
+  &--lg {
+    @extend .button;
+    @include button-size("lg");
+  }
+
+  &--fullwidth {
+    @extend .button;
+    width: 100%;
+  }
+
+  &--no-hover {
+    @extend .button;
+    pointer-events: none;
+  }
+
+  &--no-border {
+    @extend .button;
+  }
+
+  @each $name, $value in $theme-colors {
+    &-normal--#{$name} {
+      @extend .button;
+      background-color: $value;
+      color: $white;
+      border-style: solid;
+      border-color: $value;
+
+      &:disabled {
+        background-color: rgba($value, 0.5);
+        border-color: rgba($value, 0.5);
+      }
+    }
+    &-outline--#{$name} {
+      @extend .button;
+      background-color: transparent;
+      color: $value;
+      border-style: solid;
+      border-color: $value;
+
+      &:disabled {
+        color: rgba($value, 0.5);
+        border-color: rgba($value, 0.5);
+      }
+    }
+  }
+}

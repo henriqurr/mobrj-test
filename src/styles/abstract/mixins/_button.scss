@@ -1,0 +1,12 @@
+@mixin button-size($size) {
+  @extend .fw-600, .fs-md;
+  @if $size == "normal" {
+    padding: $button-padding-y $button-padding-x;
+    gap: $button-gap;
+  }
+
+  @if $size == "lg" {
+    padding: $button-lg-padding-y $button-lg-padding-x;
+    gap: $button-lg-gap;
+  }
+}

@@ -1,0 +1,57 @@
+@charset 'utf-8';
+@use "sass:math";
+
+@import "abstract/index";
+@import "base/reset";
+@import "base/typography";
+@import "components/buttons";
+
+// Os exemplos abaixo foram setados para facilitar,
+// entretanto use-a/altere-a como preferir
+
+// Colors Exemple
+// Mais cores em abstract/variables/_colors.scss
+// .components {
+//   color: $primary;
+//   color: $secondary;
+//   color: $success;
+//   color: $warning;
+//   color: $danger;
+//   color: $light;
+//   color: $dark;
+//   color: $white;
+//   color: $white-50;
+//   color: $black;
+//   color: $gray;
+//   color: $lighter-gray-50;
+//   color: $lighter-gray-100;
+//   color: $lighter-gray;
+//   color: $light-gray;
+//   color: $dark-gray;
+// }
+
+//Fonts exemple
+// Verifique no figma, em style-guide, os valores respectivos
+// .components {
+//     @extend .text-xs;
+//     @extend .text-sm;
+//     @extend .text-md;
+//     @extend .text-lg;
+//     @extend .text-xl;
+//     @extend .text-2xl;
+//     @extend .text-3xl;
+//     @extend .text-4xl;
+//     @extend .text-5xl;
+//   }
+
+//Break-points exemple
+// Mais cores em abstract/variables/_breakpoints.scss
+// .components {
+// @include breakpoint-to('xs') {
+//   }
+// @include breakpoint-to('sm') {
+//   }
+// @include breakpoint-to('md') {
+//   }
+// ...etc
+//   }
