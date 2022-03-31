@@ -4,7 +4,7 @@ import router from 'next/router'
 
 import styles from '../../styles/components/login/styles.module.scss'
 
-export function Login() {
+export default function Login() {
     const [step, setStep] = useState(0)
     const [accountSigned, setAccountSigned] = useState<boolean>(false)
 
