@@ -1,7 +1,15 @@
-import React from "react"
+import { Login } from 'pages/login'
 
-const Home = function () {
-  return <div>Home</div>
+import Head from 'next/head'
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Login - MobRJ</title>
+      </Head>
+      
+      <Login />
+    </>
+  )
 }
-
-export default Home
