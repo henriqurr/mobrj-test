@@ -1,6 +1,6 @@
-export function Header(styles: any) {
+export function Header() {
     return (
-        <header className={styles.headerContainer}>
+        <header className="styles.headerContainer">
             AAAAAAAAAAAAA
         </header>
     )
