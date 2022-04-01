@@ -1,5 +1,16 @@
 @import "../../abstract/variables/colors";
 
+.headerContainer {
+    margin: 0 auto;
+    padding: 32px;
+    width: 100%;
+    background-color: $gray-400;
+
+    display: flex;
+
+    //max-width: 1120px;
+}
+
 .container {
     background-color: white;
     width: 100vw;
@@ -7,3 +18,10 @@
     display: grid;
 }
 
+.contentContainer {
+
+}
+
+.contentAside {
+
+}

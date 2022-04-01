@@ -9,8 +9,15 @@ export default function Dashboard() {
             <title>Dashboard - MobRJ</title>
         </Head>
 
+      
+
         <div className={styles.container}>
-            DASHBOARD
+            <div className={styles.contentContainer}>
+                Trlhas
+            </div>
+            <aside className={styles.contentAside}>
+                Trilhas e Recomendados
+            </aside>
         </div>
     </>
     )
