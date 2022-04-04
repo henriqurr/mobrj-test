@@ -1,5 +1,7 @@
 import styles from 'styles/components/login/styles.module.scss'
 
+import { isMobile } from 'react-device-detect'
+
 interface LoginProps { 
     userName: string;
     passwd: string;
@@ -15,7 +17,7 @@ export function LoginWelcomeBox({ setStep } : LoginProps) {
             <div className={styles.boxForDisplayPosition} />
             <div className={styles.boxContent}>
                 <div className={styles.box}>
-                    <form className={styles.contentPlataform}>
+                    <form className={styles.contentLoginWelcome}>
                         <h2>
                             Bem vindo!
                         </h2>               
@@ -38,11 +40,15 @@ export function LoginWelcomeBox({ setStep } : LoginProps) {
 
 export function LoginAccountBox({ userName, passwd, setUserName, setPasswd, setStep } : LoginProps) {
     return (
-        <div className={styles.container}>
+        <div className={
+            isMobile
+            ? styles.containerMobile
+            : styles.container
+            }>
             <div className={styles.boxForDisplayPosition} />
             <div className={styles.boxContent}>
                 <div className={styles.box}>
-                    <form className={styles.contentLogin}>
+                    <form className={styles.contentLoginAccount}>
                         <h2>
                             Bem vindo!
                         </h2>

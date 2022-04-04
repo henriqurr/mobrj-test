@@ -9,7 +9,11 @@ export default function Dashboard() {
             <title>Dashboard - MobRJ</title>
         </Head>
 
-      
+        <header className={styles.headerContainer}>
+            <div>
+
+            </div>
+        </header>
 
         <div className={styles.container}>
             <div className={styles.contentContainer}>

@@ -8,6 +8,15 @@
     display: flex;
 }
 
+//login screen for mobile
+.containerMobile {
+    background: transparent url('../../../../public/images/login/background-mobile-login.svg') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
 .boxForDisplayPosition {
     width: 50%;
 }
@@ -24,92 +33,95 @@
     max-height: 322px;
     border-radius: 8px;
     margin: 0 auto;
-    background: white;
+    background: $gradient-popup;
+    box-shadow: 0px 2px 11px -5px rgba(0, 0, 0, 0.1);
 }
 
-.contentPlataform {
-    width: 100%;
-    text-align: center;
+.contentLoginWelcome {
     border-radius: 0.25rem;
     padding: 82px 120px;
+    text-align: center;
+    width: 100%;
 
     h2 {
-        color: $action-500;
+        background: $gradient-main;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
         font-size: 3rem;
         font-weight: 600;
         margin-bottom: 1.25rem;
     }
 
     p {
-        color: gray;
+        color: $gray-600;
         margin-bottom: 1.25rem;
     }
 
+    //ENTRAR
     button {
-        padding: 8px 46px;
-        height: 4rem;
         background: transparent;
-        color: $action-500;
-        margin-top: 1.25rem;
-        border-radius: 0.25rem;
-        font-size: 1.25rem;
+        border: 2px solid $action-600; //gradient-main
+        border-radius: 4px;
+        color: $action-600;
+        font-size: 14px;
         font-weight: 600;
+        height: 4rem;
+        margin-top: 1.25rem;
+        padding: 8px 46px;
         transition: filter 0.2s;
 
         &:hover {
             filter: brightness(0.98);
         }
-        border: 2.5px solid $action-500;
     }
 }
 
-.contentLogin {
-    width: 100%;
-    text-align: center;
-    padding: 45px 80px;
+.contentLoginAccount {
     border-radius: 0.25rem;
+    padding: 45px 80px;
+    text-align: center;
+    width: 100%;
 
     h2 {
-        color: $action-500;
+        background: $gradient-main;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
         font-size: 3rem;
         font-weight: 600;
         margin-bottom: 1.25rem;
     }
 
-    p {
-        color: gray;
-        margin-bottom: 1.25rem;
-    }
-
+    //LOGAR
     button {
-        padding: 9px 52px;
-        height: 4rem;
-        background: $action-500;
+        background: $action-600;
+        border-radius: 4px;
+        border-color: transparent;
         color: white;
-        margin-top: 1.25rem;
-        border-radius: 0.25rem;
-        border: 0;
-        font-size: 1.25rem;
+        font-size: 14px;
         font-weight: 600;
+        height: 4rem;
+        margin-top: 1.25rem;
+        padding: 9px 52px;
         transition: filter 0.2s;
 
         &:hover {
-            filter: brightness(0.9);
+            filter: brightness(0.98);
         }
     }
 
     input {
-        width: 100%;
-        padding: 0 1.5rem;
-        height: 4rem;
-
         border: none;
-        border-bottom: 1px solid #d7d7d7;
-
+        border-bottom: 1px solid $gray-400;
+        font-size: 14px;
         font-weight: 400;
-        font-size: 1.5rem;
-
+        height: 4rem;
         margin-bottom: 2rem;
+        padding: 0 1.5rem;
+        width: 100%;
 
         &::placeholder {
             color: $gray-300;
@@ -118,6 +130,11 @@
 }
 
 @media screen and (max-width:720px) {
+    .container {
+        background: transparent url('../../../../public/images/login/background-mobile.svg') no-repeat;
+        background-size: cover;
+    }
+
     .boxForDisplayPosition {
         display: none;
     }
@@ -127,7 +144,7 @@
         padding: 0 20px;
     }
 
-    .contentPlataform {
+    .contentLoginWelcome {
         padding: 85px 40px;
 
         button {
@@ -135,9 +152,13 @@
         }
     }
 
-    .contentLogin {
+    .contentLoginAccount {
         button {
             width: 100%;
+        }
+
+        input {
+            color: $gray-600;
         }
     }
 }
